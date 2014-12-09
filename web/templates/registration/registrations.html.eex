@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <h2>Welcome to Ensalutilo!</h2>
+  <p class="lead">
+    Registered users
+  </p>
+</div>
+
+<div class="row">
+  <div class="col-lg-12">
+    <ul>
+      <%= for registration <- @registrations do %>
+        <li><%= registration.user_id %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+

@@ -19,5 +19,6 @@ defmodule Ensalutilo.Router do
   scope "/registration", Ensalutilo do
     get "/", RegistrationController, :index
     post "/register", RegistrationController, :register
+    get "/all", RegistrationController, :registrations
   end
 end
