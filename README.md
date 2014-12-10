@@ -1,6 +1,8 @@
 ensalutilo
 ==========
 
+[![Phoenix](https://raw.githubusercontent.com/phoenixframework/media/master/badges/poweredby-phoenix-badge2-06.png)](http://phoenixframework.org)
+
 A sign-in tool for meeting groups
 
 by [Colin Dean](http://github.com/colindean) and [Justin X.
