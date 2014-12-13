@@ -25,6 +25,7 @@ defmodule Ensalutilo.Mixfile do
     [{:phoenix, "~> 0.6.2"},
      {:cowboy, "~> 1.0"},
      {:postgrex, "~> 0.6.0"},
-     {:ecto, "~> 0.2.5"}]
+     {:ecto, "~> 0.2.5"},
+     {:phoenix_haml, "~> 0.1.0"}]
   end
 end

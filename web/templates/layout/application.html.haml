@@ -1,0 +1,19 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content: "IE=edge", "http-equiv": "X-UA-Compatible"}
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
+    %meta{content: "", name: "description"}
+    %meta{content: "", name: "author"}
+    %title= __("Ensaluti!")
+    %link{href: "/css/phoenix.css", rel: "stylesheet"}
+  %body
+    .container
+      .header
+        %span.logo
+      = @inner
+      .footer
+        %p
+          %a{href: "http://codeandsupply.co"}
+            = __("Code & Supply")

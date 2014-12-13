@@ -14,6 +14,18 @@ defmodule Ensalutilo.View do
 
       # Common aliases
       alias Phoenix.Controller.Flash
+
+      def __(key) do
+        __(key, {})
+      end
+
+      def __(key, args) do
+        locale = "en"
+        # I can't figure out yet how to trigger I18n...
+        #Ensalutilo.I18n.t(locale, key, args)
+        key
+      end
+
     end
   end
 
