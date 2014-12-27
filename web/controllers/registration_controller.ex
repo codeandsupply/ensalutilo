@@ -13,6 +13,11 @@ defmodule Ensalutilo.RegistrationController do
     render conn, "registrations.html", registrations: registrations
   end
 
+  def registrations(conn, %{"id" => id}) do
+    registrations = Ensalutilo.RegistrationQuery.by_user(id)
+    render conn, "registrations.html", registrations: registrations
+  end
+
   def registrations(conn, _params) do
     registrations = Ensalutilo.Repo.all Ensalutilo.Registration
     render conn, "registrations.html", registrations: registrations
